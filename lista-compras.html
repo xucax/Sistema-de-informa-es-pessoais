@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Compras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Lista de compraa e guia simples de alimentação</div>
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lista-compras.html" class="active">Compras</a></li>
+      <li><a href="dieta-cardapio.html">Cardápio</a></li>
+      <li><a href="treino-ppl.html">Treino</a></li>
+      <li><a href="guia-baixo-volume.html">BV</a></li>
+      <li><a href="antebraco-de-gorila.html">Antebraço</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="card">
+      <h1>🛒 LISTA DE COMPRAS BASE</h1>
+
+      <h2>Proteínas:</h2>
+      <ul>
+        <li>Patinho moído</li>
+        <li>Frango (coxa/sobrecoxa ou peito)</li>
+        <li>Sardinha em lata (óleo ou água)</li>
+        <li>Ovos</li>
+        <li>Atum</li>
+        <li>Queijo minas (ou muçarela se for mais barato)</li>
+      </ul>
+
+      <h2>Carboidratos:</h2>
+      <ul>
+        <li>Arroz branco ou parboilizado</li>
+        <li>Batata inglesa</li>
+        <li>Macarrão</li>
+        <li>Pão integral</li>
+        <li>Aveia</li>
+      </ul>
+
+      <h2>Gorduras:</h2>
+      <ul>
+        <li>Pasta de amendoim</li>
+        <li>Azeite</li>
+        <li>Castanha do Pará (ou amendoim torrado)</li>
+      </ul>
+
+      <h2>Extras úteis:</h2>
+      <ul>
+        <li>Leite em pó</li>
+        <li>Cacau em pó 100%</li>
+        <li>Canela</li>
+        <li>Sal rosa (ou sal comum)</li>
+        <li>Temperos secos (orégano, páprica, chimichurri)</li>
+      </ul>
+
+      <p><strong>💸 Foco é custo-benefício.</strong> Compra em atacado, promoção ou direto do açougue/balcão ajuda demais.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lucas e Ryan - Todos os direitos reservados - Indo atrás do prime 💀</p>
+  </footer>
+  
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+</script>
+</body>
+</html>

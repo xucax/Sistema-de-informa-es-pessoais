@@ -1,0 +1,232 @@
+:root {
+  --bg-light: #dce3e9;
+  --bg-dark: #0e1b29;
+  --accent: #7162ff;
+  --text: #111;
+  --muted-text: #555;
+  --primary: #7162ff; /* corrigindo variável usada no active */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Container pra dar espaçamento */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-dark);
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: var(--primary);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--bg-dark);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+
+/* Layout */
+.section {
+  padding: 3rem 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a4ddb;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-dark);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+/* Estilo para tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+thead {
+  background-color: var(--accent);
+  color: white;
+}
+
+th, td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgb(0 0 0 / 0.1);
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card h1 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.card h2 {
+  color: var(--accent-dark);
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card ul li {
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.card p strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  max-height: 200px;
+}
+.card p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+}

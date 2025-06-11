@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Home</div>
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="lista-compras.html">Compras</a></li>
+      <li><a href="dieta-cardapio.html">Cardápio</a></li>
+      <li><a href="treino-ppl.html">Treino</a></li>
+      <li><a href="guia-baixo-volume.html">BV</a></li>
+      <li><a href="antebraco-de-gorila.html">Antebraço</a></li>
+    </ul>
+  </nav>
+
+  <header class="section" style="text-align:center">
+    <h1>Bem-vindo ao seu Sistema de Informações Pessoais</h1>
+    <p>Seu hub pessoal pra dieta, treino e compras.</p>
+  </header>
+
+  <section class="section grid grid-4">
+  <div class="card">
+    <img src="frankzane.jpg" alt="Supino reto" class="card-img" />
+    <p>Um dos fisícos mais bonitos já vistos<br>-Frank Zane</p>
+  </div>
+  <div class="card">
+    <img src="levrone.jpg" alt="Remada curvada" class="card-img" />
+    <p>The Maryland Muscle Machine, uma das géneticas mais sinistras vistas<br>-Kevin Levrone</p>
+  </div>
+  <div class="card">
+    <img src="mikementzer.jpg" alt="Agachamento livre" class="card-img" />
+    <p>O pai do baixo volume<br> -Mike Mentzer</p>
+  </div>
+  <div class="card">
+    <img src="arnold.jpg" alt="Rosca direta" class="card-img" />
+    <p>Uma lenda e um dos maiores nomes da Golden Era<br> -Arnold</p>
+  </div>
+</section>
+
+  <section class="section grid grid-3">
+    <div class="card">
+      <h3>Resumo de Dieta</h3>
+      <p>Veja sua rotina alimentar e metas de calorias.</p>
+    </div>
+    <div class="card">
+      <h3>Lista de Compras</h3>
+      <p>Tenha tudo o que precisa para a semana.</p>
+    </div>
+    <div class="card">
+      <h3>Treino da Semana</h3>
+      <p>Organize seus treinos por dia e por grupo muscular.</p>
+    </div>
+  </section>
+
+  <section class="section py-12 text-center bg-white">
+  <h2 class="text-3xl font-bold mb-10 text-purple-700">Conheça os Pilares do Treino</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+
+    <div class="card bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+      <div class="text-purple-600 mb-4 text-4xl">📈</div>
+      <h3 class="text-xl font-semibold mb-2">Sobrecarga Progressiva</h3>
+      <p class="text-gray-600">Evoluir no treino exige aumentar o estímulo com o tempo — seja peso, repetições ou intensidade. Se não desafiar, não muda.</p>
+    </div>
+
+    <div class="card bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+      <div class="text-purple-600 mb-4 text-4xl">✅</div>
+      <h3 class="text-xl font-semibold mb-2">Técnica Correta</h3>
+      <p class="text-gray-600">Fazer o exercício com a forma certa evita lesão e ativa o músculo ideal. Menos ego, mais controle.</p>
+    </div>
+
+    <div class="card bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+      <div class="text-purple-600 mb-4 text-4xl">😴</div>
+      <h3 class="text-xl font-semibold mb-2">Recuperação</h3>
+      <p class="text-gray-600">O descanso é quando o corpo realmente evolui. Dormir bem e respeitar o tempo entre treinos é obrigatório.</p>
+    </div>
+
+    <div class="card bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+      <div class="text-purple-600 mb-4 text-4xl">🥩</div>
+      <h3 class="text-xl font-semibold mb-2">Nutrição</h3>
+      <p class="text-gray-600">Sem comida, sem resultado. Dieta ajustada ao objetivo é a base de qualquer progresso no treino.</p>
+    </div>
+
+    <div class="card bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+      <div class="text-purple-600 mb-4 text-4xl">📅</div>
+      <h3 class="text-xl font-semibold mb-2">Consistência</h3>
+      <p class="text-gray-600">Ir na academia só quando dá vontade não constrói nada. O segredo é treinar com regularidade, dia após dia.</p>
+    </div>
+
+    <div class="card bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+      <div class="text-purple-600 mb-4 text-4xl">🧠</div>
+      <h3 class="text-xl font-semibold mb-2">Planejamento</h3>
+      <p class="text-gray-600">Seguir um plano de treino bem estruturado dá direção e propósito a cada sessão. Evita achismo e maximiza o progresso.</p>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    <p>© 2025 Lucas e Ryan - Todos os direitos reservados - Indo atrás do prime 💀</p>
+  </footer>
+  
+  <script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+</script>
+  
+</body>
+</html>

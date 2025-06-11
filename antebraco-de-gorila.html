@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Treino Mão de Concreto</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    /* Cards básicos para seções */
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    /* Subtítulos do card */
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    /* Mantém seu estilo de tabela, com leve espaçamento */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 0.75rem;
+      text-align: left;
+    }
+
+    table th {
+      background-color: var(--bg-dark);
+      color: white;
+    }
+
+    table td {
+      background-color: #fff;
+    }
+
+    hr {
+      margin-top: 2rem;
+      border: 0;
+      height: 1px;
+      background: #ccc;
+    }
+
+    blockquote {
+      background: #eee;
+      padding: 1rem;
+      border-left: 5px solid var(--accent);
+      margin: 1rem 0;
+      font-style: italic;
+    }
+
+    /* Menu toggle e nav para mobile */
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        background-color: var(--bg-dark);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        display: none;
+        padding: 1rem 2rem;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Dedos que destroem nozes</div>
+    <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lista-compras.html">Lista de Compras</a></li>
+      <li><a href="dieta-cardapio.html">Dieta & Cardápio</a></li>
+      <li><a href="treino-ppl.html">Treino PPL</a></li>
+      <li><a href="guia-baixo-volume.html">BV explicado</a></li>
+      <li><a href="antebraco-de-gorila.html" class="active">Antebraço de Gorila 💀</a></li>
+    </ul>
+  </nav>  
+
+  <main class="container">
+    <h1>🦍 TREINO: "MÃO DE CONCRETO"</h1>
+    
+    <section class="card">
+      <p>
+        Frequência: 3 a 5x por semana, sessões de 15 a 25 min.<br />
+        Objetivo: fortalecer todos os aspectos funcionais do antebraço e mão.
+      </p>
+      <hr />
+    </section>
+
+    <section class="card">
+      <h2>🔁 Estrutura semanal (Exemplo 3x/semana):</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Ênfase Principal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Segunda</td><td>Grip + Crushing Force</td></tr>
+          <tr><td>Quarta</td><td>Pinça + Isometria</td></tr>
+          <tr><td>Sexta</td><td>Volume geral + Resistência</td></tr>
+        </tbody>
+      </table>
+      <hr />
+    </section>
+
+    <section class="card">
+      <h2>🔩 SEGUNDA – Esmaga tudo (Grip + Crushing)</h2>
+      <p>🔥 1. Captains of Crush ou Hand Gripper pesado</p>
+      <p>3-4 séries de 5-8 reps por mão</p>
+      <p>Se for fraco ainda, usa gripper normal e vai até a falha.</p>
+
+      <p>🔥 2. Wrist Roller (ou rolo caseiro)</p>
+      <p>2-3 subidas completas (sobe e desce = 1)</p>
+      <p>Braços estendidos à frente.</p>
+
+      <p>🔥 3. Hammer Curls com barra grossa ou enrolada com toalha</p>
+      <p>3x10-12 (descanso de 60 seg)</p>
+      <p>Pegada esmagadora.</p>
+
+      <p>🔥 4. Wrist Curl + Reverse Wrist Curl (superset)</p>
+      <p>3x15 cada, sem descanso entre elas.</p>
+      <hr />
+    </section>
+
+    <section class="card">
+      <h2>🧱 QUARTA – Pinça + Isometria</h2>
+      <p>🔥 1. Pinch Grip com Anilhas (ou livros grossos)</p>
+      <p>Segura 2 anilhas de 5-10kg por 30-60s</p>
+      <p>3 rounds</p>
+
+      <p>🔥 2. Dead Hang com Toalha ou Barra Grossa</p>
+      <p>3x máximo tempo</p>
+      <p>Se passar de 45s, adiciona peso.</p>
+
+      <p>🔥 3. Plate Curl (usa anilha de lado, pegada só nos dedos)</p>
+      <p>3x8-10 reps</p>
+      <p>Pega o disco só pela borda, levanta tipo curl.</p>
+
+      <p>🔥 4. Extensores com elástico (ou elásticos de dinheiro)</p>
+      <p>3x20 abrindo os dedos</p>
+      <p>Compensa os flexores e evita lesão.</p>
+      <hr />
+    </section>
+
+    <section class="card">
+      <h2>🥵 SEXTA – Volume e resistência (tritura e segura até falhar)</h2>
+      <p>🔥 1. Farmer’s Walk (com halteres ou anilhas)</p>
+      <p>4 rounds de 40-60 segundos</p>
+      <p>Peso alto o suficiente pra tu rezar no fim.</p>
+
+      <p>🔥 2. Wrist Roller + Reverse Roller (2 direções)</p>
+      <p>2 rounds cada</p>
+      <p>Queima total.</p>
+
+      <p>🔥 3. Finger Tip Push-ups ou Pressão de Dedos na Parede</p>
+      <p>3x máximo reps</p>
+      <p>Se for difícil, faz na parede com peso do corpo projetado nos dedos.</p>
+
+      <p>🔥 4. Toalha Twist (seca uma toalha molhada com força)</p>
+      <p>3x até travar os dedos</p>
+      <p>Parece idiota, mas destrói a força fina e torque do punho.</p>
+      <hr />
+    </section>
+
+    <section class="card">
+      <h2>☠️ BÔNUS DE DOR: Finalizador opcional (1-2x por semana)</h2>
+      <blockquote>
+        “5 minutos do inferno”<br />
+        Faz tudo abaixo sem descanso:
+      </blockquote>
+      <p>1 min Dead Hang</p>
+      <p>1 min Wrist Curl com halteres leves</p>
+      <p>1 min Pinch Hold com livros</p>
+      <p>1 min Gripper reps rápidas</p>
+      <p>1 min Massageia a alma e aceita a dor</p>
+      <hr />
+    </section>
+
+    <section class="card">
+      <h2>⚠️ DICAS FINAIS</h2>
+      <p>Se os dedos doerem de um jeito estranho (articulação), dá 1 dia de descanso.</p>
+      <p>Usa magnésio em pó se escorregar (ou giz de quadro mesmo kkk).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lucas e Ryan - Todos os direitos reservados - Indo atrás do prime 💀</p>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      menuToggle.innerHTML = navLinks.classList.contains('open') ? '&times;' : '&#9776;';
+    });
+  </script>
+</body>
+</html>

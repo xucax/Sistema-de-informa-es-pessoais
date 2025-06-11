@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio da Dieta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+  <div class="logo">Dieta e Cardápio</div>
+  <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="lista-compras.html">Compras</a></li>
+    <li><a href="dieta-cardapio.html" class="active">Cardápio</a></li>
+    <li><a href="treino-ppl.html">Treino</a></li>
+    <li><a href="guia-baixo-volume.html">BV</a></li>
+    <li><a href="antebraco-de-gorila.html">Antebraço</a></li>
+  </ul>
+</nav>
+
+  <header class="section" style="text-align:center">
+    <h1>Seu Cardápio de Hipertrofia</h1>
+    <p>Distribuído em refeições completas e baratas</p>
+  </header>
+
+  <section class="section grid grid-3">
+    <div class="card">
+      <h3>Café da Manhã</h3>
+      <ul>
+        <li>4 ovos</li>
+        <li>2 fatias de pão integral</li>
+        <li>1 banana com aveia</li>
+        <li><strong>~500 kcal</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Almoço</h3>
+      <ul>
+        <li>150g carne vermelha</li>
+        <li>Arroz + feijão</li>
+        <li>Salada</li>
+        <li><strong>~800 kcal</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Pós-Treino</h3>
+      <ul>
+        <li>Hipercalórico caseiro</li>
+        <li>Leite + aveia + banana + pasta de amendoim</li>
+        <li><strong>~600 kcal</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Jantar</h3>
+      <ul>
+        <li>Frango grelhado</li>
+        <li>Macarrão integral</li>
+        <li>Legumes cozidos</li>
+        <li><strong>~700 kcal</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Lanches</h3>
+      <ul>
+        <li>Ovos cozidos</li>
+        <li>Pão com pasta de amendoim</li>
+        <li>Iogurte natural</li>
+        <li><strong>~300-400 kcal</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Lucas e Ryan - Todos os direitos reservados - Indo atrás do prime 💀</p>
+  </footer>
+</body>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    menuToggle.innerHTML = navLinks.classList.contains('open') ? '&times;' : '&#9776;';
+  });
+</script>
+
+</html>
